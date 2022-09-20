@@ -1,8 +1,19 @@
 import "./styles.css";
+
+// import Collaboration from '@tiptap/extension-collaboration'
+// import StarterKit from "@tiptap/starter-kit";
+// import { EditorContent, useEditor } from "@tiptap/react";
+// import { MenuBar } from "./toolbar";
+
 import Collaboration from '@tiptap/extension-collaboration'
-import StarterKit from "@tiptap/starter-kit";
-import { EditorContent, useEditor } from "@tiptap/react";
-import { MenuBar } from "./toolbar";
+import Document from '@tiptap/extension-document'
+import Paragraph from '@tiptap/extension-paragraph'
+import Placeholder from '@tiptap/extension-placeholder'
+import Text from '@tiptap/extension-text'
+import { EditorContent, useEditor } from '@tiptap/react'
+import React from 'react'
+import { WebrtcProvider } from 'y-webrtc'
+import * as Y from 'yjs'
 
 // Adding collaboration
 const ydoc = new Y.Doc()
@@ -11,7 +22,10 @@ const provider = new WebrtcProvider('tiptap-collaboration-extension', ydoc)
 export default () => {
   const editor = useEditor({
     extensions: [
-      StarterKit,
+      // StarterKit,
+      Document,
+      Paragraph,
+      Text,
       Collaboration.configure({
         document: ydoc,
       }),
