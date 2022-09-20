@@ -4,6 +4,10 @@ import StarterKit from "@tiptap/starter-kit";
 import { EditorContent, useEditor } from "@tiptap/react";
 import { MenuBar } from "./toolbar";
 
+// Adding collaboration
+const ydoc = new Y.Doc()
+const provider = new WebrtcProvider('tiptap-collaboration-extension', ydoc)
+
 export default () => {
   const editor = useEditor({
     extensions: [
