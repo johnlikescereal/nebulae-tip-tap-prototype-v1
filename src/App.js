@@ -1,11 +1,17 @@
 import "./styles.css";
+import Collaboration from '@tiptap/extension-collaboration'
 import StarterKit from "@tiptap/starter-kit";
 import { EditorContent, useEditor } from "@tiptap/react";
 import { MenuBar } from "./toolbar";
 
 export default () => {
   const editor = useEditor({
-    extensions: [StarterKit],
+    extensions: [
+      StarterKit,
+      Collaboration.configure({
+        document: ydoc,
+      })
+    ],
     content: `
       <h2>
         Hi there,
