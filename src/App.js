@@ -14,23 +14,12 @@ export default () => {
       StarterKit,
       Collaboration.configure({
         document: ydoc,
-      })
+      }),
+      Placeholder.configure({
+        placeholder:
+          'Write something … It’ll be shared with everyone else looking at this example.',
+      }),
     ],
-    content: `
-      <h2>
-        Hi there,
-      </h2>
-      <p>
-        Feel free to play around with the text!
-      </p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    `
   });
 
   return (
