@@ -36,10 +36,10 @@ export default () => {
       </ul>
       <p><em>Publishing</em></p>
       <ul>
-      <li>Publish to Nebulae</li>
+      <li>Publish to Nebuly</li>
       <li>Export to .epub, etc.</li>
       </ul>
-      <p>All of this is a rough draft. If you’re interested in supporting us on this journey, consider investing in our <a href="[https://pitch.com/v/nebulae-pre-seed-8w5gpb](https://pitch.com/v/nebulae-pre-seed-8w5gpb">pre-seed</a>) round. If you want to join us on this journey, send me an e-mail at <a href="mailto:john@nebulae.gg">john@nebulae.gg</a>.</p>
+      <p>All of this is a rough draft. If you’re interested in supporting us on this journey, consider investing in our <a href="[https://pitch.com/v/nebulae-pre-seed-8w5gpb](https://pitch.com/v/nebulae-pre-seed-8w5gpb">pre-seed</a>) round. If you want to join us on this journey, send me an e-mail at <a href="mailto:john@nebuly.gg">john@nebu.ly</a>.</p>
       <p>Cheers,</p>
       <p>John</p>
       <br>
@@ -48,9 +48,9 @@ export default () => {
 
   return (
     <div>
-      <h1>Nebulae editor</h1>
+      <h1>Nebuly editor</h1>
       <p>
-        Welcome to the Nebulae, a collaborative text editor and
+        Welcome to the Nebuly, a collaborative text editor and
         publishing platform that allows authors to co-create stories and share
         revenue from earnings based on their contribution. This is our
         ever-evolving demo.
